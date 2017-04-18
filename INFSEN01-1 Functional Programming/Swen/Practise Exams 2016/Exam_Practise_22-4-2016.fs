@@ -99,8 +99,3 @@ let playerShip = { position = 0.0, 0.0; projectiles = [] }
 let moveRight = Move (0.4, 0.0)
 let playerShipAfterMove = execute playerShip moveRight
 let playerShipAfterShoot = execute playerShip Shoot
-
-[<EntryPoint>]
-let main argv = 
-    printfn "%A" argv
-    0 // return an integer exit code
