@@ -14,9 +14,9 @@ let rec tau1 (inputFunction: (Option<'a> -> List<'a>)) (list1: List<Option<'a>>)
     | x::xs -> (inputFunction x):: tau1 inputFunction xs
 
 type Age = {
-    mutable days: int;
-    mutable months: int;
-    mutable years: int;
+    days: int;
+    months: int;
+    years: int;
 }
 
 type Person = {
@@ -32,9 +32,7 @@ let person = {
 }
 
 let age (p:Person) : Person =
-    p.age.days <- p.age.days + 1
-    p.age.months <- p.age.months + 1
-    p.age.years <- p.age.years + 1
+    let p = {p with age = {days = p.age.days + 1; months = p.age.months + 1; years = p.age.years + 1}}
     p
 
 age person
