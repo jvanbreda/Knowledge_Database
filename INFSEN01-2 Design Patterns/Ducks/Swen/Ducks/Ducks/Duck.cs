@@ -16,6 +16,7 @@ namespace Ducks
         public Duck(IFlyBehaviour wings, IQuackBehaviour mouth)
         {
             this.wings = wings;
+            this.mouth = mouth;
         }
 
         public void Fly()
