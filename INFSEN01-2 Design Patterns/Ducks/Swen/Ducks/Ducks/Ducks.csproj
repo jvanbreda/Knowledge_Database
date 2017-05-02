@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Duck.cs" />
+    <Compile Include="FlyBehaviours\GoodFlyer.cs" />
+    <Compile Include="FlyBehaviours\IFlyBehaviour.cs" />
+    <Compile Include="FlyBehaviours\NoFlyer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
