@@ -1,4 +1,5 @@
 ﻿using Ducks.Behaviours.Fly;
+using Ducks.Behaviours.Quack;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +11,9 @@ namespace Ducks
     class Duck
     {
         IFlyBehaviour wings;
+        IQuackBehaviour mouth;
 
-        public Duck(IFlyBehaviour wings)
+        public Duck(IFlyBehaviour wings, IQuackBehaviour mouth)
         {
             this.wings = wings;
         }
@@ -19,6 +21,11 @@ namespace Ducks
         public void Fly()
         {
             this.wings.Fly();
+        }
+
+        public void Quack()
+        {
+            this.mouth.Quack();
         }
     }
 }
