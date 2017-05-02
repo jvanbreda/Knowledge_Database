@@ -42,10 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behaviours\Quack\IQuackBehaviour.cs" />
+    <Compile Include="Behaviours\Quack\LoudQuacker.cs" />
+    <Compile Include="Behaviours\Quack\MutedQuacker.cs" />
     <Compile Include="Duck.cs" />
-    <Compile Include="FlyBehaviours\GoodFlyer.cs" />
-    <Compile Include="FlyBehaviours\IFlyBehaviour.cs" />
-    <Compile Include="FlyBehaviours\NoFlyer.cs" />
+    <Compile Include="Behaviours\Fly\GoodFlyer.cs" />
+    <Compile Include="Behaviours\Fly\IFlyBehaviour.cs" />
+    <Compile Include="Behaviours\Fly\NoFlyer.cs" />
+    <Compile Include="DuckFactory.cs" />
+    <Compile Include="DuckType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
