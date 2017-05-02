@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ducks
+namespace Ducks.Behaviours.Fly
 {
     interface IFlyBehaviour
     {
