@@ -10,10 +10,12 @@ namespace BearsAndApples
     {
         public string Name { get; set; }
         public string Origin { get; set; }
+        public int Stock { get; set; }
+        public double Price { get; set; }
 
         public override string ToString()
         {
-            return string.Format("[Bear(Name: {0}; Origin: {1};)]", Name, Origin);
+            return string.Format("[Bear(Name: {0}; Origin: {1}; Stock: {2}; Price: {3};)]", Name, Origin, Stock, Price);
         }
     }
 }

@@ -11,12 +11,12 @@ namespace BearsAndApples
         public IAggregate<Bear> Bears { get; set; }
         public IAggregate<Apple> Apples { get; set; }
 
-        // The goal
         public void PrintInventory()
         {
             IIterator<Bear> bearIterator = Bears.GetIterator();
             IIterator<Apple> appleIterator = Apples.GetIterator();
 
+            Console.WriteLine("At this moment the inventory consists of: ");
             while(bearIterator.HasNext())
             {
                 Console.WriteLine(bearIterator.Next());
