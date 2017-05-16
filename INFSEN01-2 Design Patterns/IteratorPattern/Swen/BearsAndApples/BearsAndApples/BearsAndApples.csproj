@@ -42,23 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="model\Apple.cs" />
-    <Compile Include="model\Bear.cs" />
-    <Compile Include="CustomArray.cs" />
-    <Compile Include="CustomArrayIterator.cs" />
-    <Compile Include="CustomList.cs" />
-    <Compile Include="CustomListIterator.cs" />
-    <Compile Include="IAggregate.cs" />
-    <Compile Include="IIterator.cs" />
-    <Compile Include="Inventory.cs" />
+    <Compile Include="Model\Apple.cs" />
+    <Compile Include="Model\Bear.cs" />
+    <Compile Include="Utils\Iterator\Array\CustomArray.cs" />
+    <Compile Include="Utils\Iterator\Array\CustomArrayIterator.cs" />
+    <Compile Include="Utils\Iterator\List\CustomList.cs" />
+    <Compile Include="Utils\Iterator\List\CustomListIterator.cs" />
+    <Compile Include="Utils\Iterator\IAggregate.cs" />
+    <Compile Include="Utils\Iterator\IIterator.cs" />
+    <Compile Include="Model\Inventory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="iteration\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
