@@ -14,12 +14,12 @@ namespace Suits
             this.garment = garment;
         }
 
-        public double ComputeCost()
+        public virtual double ComputeCost()
         {
             return garment.ComputeCost();
         }
 
-        public string GetDescription()
+        public virtual string GetDescription()
         {
             return garment.GetDescription();
         }

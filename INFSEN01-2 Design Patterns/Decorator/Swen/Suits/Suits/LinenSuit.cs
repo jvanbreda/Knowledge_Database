@@ -15,7 +15,7 @@ namespace Suits
 
         public string GetDescription()
         {
-            return "Linen suit";
+            return "linen suit";
         }
     }
 }

@@ -13,12 +13,12 @@ namespace Suits
 
         }
 
-        public double ComputeCost()
+        public override double ComputeCost()
         {
             return garment.ComputeCost() + 15.50d;
         }
 
-        public string GetDescription()
+        public override string GetDescription()
         {
             return garment.GetDescription() + ", shorts";
         }

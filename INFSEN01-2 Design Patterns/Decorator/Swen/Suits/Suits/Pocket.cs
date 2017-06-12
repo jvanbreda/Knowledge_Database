@@ -13,14 +13,14 @@ namespace Suits
 
         }
 
-        public double ComputeCost()
+        public override double ComputeCost()
         {
-            return garment.ComputeCost() + 12.05d;
+            return base.ComputeCost() + 12.05d;
         }
 
-        public string GetDescription()
+        public override string GetDescription()
         {
-            return garment.GetDescription() + ", pocket";
+            return base.GetDescription() + ", pocket";            
         }
     }
 }

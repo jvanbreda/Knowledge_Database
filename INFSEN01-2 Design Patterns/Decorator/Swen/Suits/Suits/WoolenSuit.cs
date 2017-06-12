@@ -15,7 +15,7 @@ namespace Suits
 
         public string GetDescription()
         {
-            return "Woolen suit";
+            return "woolen suit";
         }
     }
 }
